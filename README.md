@@ -7,3 +7,6 @@ Technologies used:
 - HTML
 - CSS
 - JavaScript
+
+Here is a demo:
+https://nikodemb-weatherapp.netlify.app
