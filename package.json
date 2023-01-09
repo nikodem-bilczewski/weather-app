@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Nikodem Bilczewski",
+  "license": "ISC",
+  "devDependencies": {
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.8.2",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

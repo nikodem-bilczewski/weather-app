@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <script type="module" src="./src/script/views/weatherView.js"></script>
+    <script type="module" src="./src/script/views/searchView.js"></script>
+    <script type="module" src="./src/script/model.js"></script>
+    <script type="module" src="./src/script/controller.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <h3><a href="./index.html">WEATHER APP</a></h3>
+      <div class="search">
+        <form class="search__form">
+          <input type="text" class="search__bar" placeholder="Search" />
+          <button class="search__button">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              height="1.5em"
+              width="1.5em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <main class="content">
+      <div class="message">
+        <h1>Welcome</h1>
+        <h3>Search for a city to get started</h3>
+      </div>
+
+      <!-- ERROR CONTAINER -->
+      <!-- <div class="container__error">
+        <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="10em" width="10em" xmlns="http://www.w3.org/2000/svg"><path d="M12 6.5c1.38 0 2.5 1.12 2.5 2.5 0 .74-.33 1.39-.83 1.85l3.63 3.63c.98-1.86 1.7-3.8 1.7-5.48 0-3.87-3.13-7-7-7-1.98 0-3.76.83-5.04 2.15l3.19 3.19c.46-.52 1.11-.84 1.85-.84zm4.37 9.6l-4.63-4.63-.11-.11L3.27 3 2 4.27l3.18 3.18C5.07 7.95 5 8.47 5 9c0 5.25 7 13 7 13s1.67-1.85 3.38-4.35L18.73 21 20 19.73l-3.63-3.63z"></path></svg></span>
+        <h2 class="error__message">${message}</h2>
+      </div> -->
+
+      <!-- LOADER -->
+      <!-- <span class="loader"></span> -->
+
+      <!-- WEATHER CARD -->
+      <!-- <section class="card__container">
+        <div class="card">
+            <div class="weather">
+              <p class="weather__date">${this.createDate()}</p>
+              <h1 class="weather__city">${this._data.city}</h2>
+              <h2 class="weather__temperature">${this._data.weather.current.temperature.toFixed(
+                0
+              )}° C</h1>
+              <p class="weather__perceived">Perceived: ${this._data.weather.current.perceivedTemp.toFixed(
+                0
+              )}° C</p>
+              
+              
+                <img src="https://openweathermap.org/img/wn/${
+                  this._data.weather.current.description.icon
+                }.png" alt="" class="weather__icon" />
+                <div class="weather__description">${
+                  this._data.weather.current.description.description
+                }</div>
+              
+              <div class="weather__humidity">Humidity: ${
+                this._data.weather.current.humidity
+              }%</div>
+              <div class="weather__wind">Wind speed: ${
+                this._data.weather.current.wind
+              } km/h</div>
+            </div>
+          </div>
+        </section> -->
+
+      <!-- FORECAST CONTAINER -->
+      <!-- <section class="forecast__container">
+        <div class="forecast">
+          <p>${this.forecastDays(i)}</p>
+          <div class="forecast__icon">
+          <img src="https://openweathermap.org/img/wn/${
+            el.weather[0].icon
+          }.png" alt="" />
+          </div>
+          <p>${el.temp.night.toFixed(0)}° C | ${el.temp.day.toFixed(0)}° C</p>
+      </div>
+      </section> -->
+    </main>
+    <footer class="footer">Developed by Nikodem Bilczewski</footer>
+  </body>
+</html>
